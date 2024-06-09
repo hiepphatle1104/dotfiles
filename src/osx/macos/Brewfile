@@ -13,6 +13,11 @@ brew "ripgrep"
 brew "neovim"
 brew "fd"
 
+# cask "font-fira-code"
+# cask "font-fira-code-nerd-font"
+# cask "font-jetbrains-mono"
+# cask "font-jetbrains-mono-nerd-font"
+
 # cask "iterm2"
 # cask "visual-studio-code"
 # cask "arc"
