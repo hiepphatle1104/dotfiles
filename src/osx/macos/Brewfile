@@ -1,0 +1,20 @@
+
+tap 'homebrew/bundle'
+
+brew "git"
+brew "node"
+brew "zsh"
+brew "bat"
+brew "eza"
+brew "fzf"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "ripgrep"
+brew "neovim"
+brew "fd"
+
+# cask "iterm2"
+# cask "visual-studio-code"
+# cask "arc"
+# cask "notion"
+# cask "notion-calendar"
