@@ -2,12 +2,6 @@
     - command: test ! -d $HOME/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended || echo "Oh My Zsh already installed, skipping installation"
       description: Installing Oh My Zsh
 
-    - command: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-      description: Installing zsh-autosuggestions
-
-    - command: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-      description: Installing zsh-syntax-highlighting
-
     - command: touch ~/.hushlogin
       description: Creating hushlogin file
 
