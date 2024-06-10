@@ -1,7 +1,7 @@
+- shell:
+    - command: bash src/scripts/ssh-setup.sh
+      description: Setting up SSH
+
 - link:
     ~/.config/nvim: src/nvim
     ~/.config/starship.toml: src/shell/themes/starship.toml
-    ~/.config/fzf: src/shell/fzf
-- shell:
-    - command: bash src/scripts/ssh-setup.sh
-        description: Setting up SSH

@@ -6,6 +6,4 @@
       description: Creating hushlogin file
 
 - link:
-    ~/.zshrc:
-      force: true
-      path: src/shell/zshrc
+    ~/.zshrc: src/shell/zshrc
