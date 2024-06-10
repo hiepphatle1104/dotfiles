@@ -1,2 +1,11 @@
+- shell:
+    - command:
+        - test ! -d /opt/homebrew && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || echo "Homebrew already installed"
+      description: Installing Homebrew
+      
+    - command: 
+        - test ! -d /opt/homebrew && echo "eval $(/opt/homebrew/bin/brew shellenv)" > ~/.zprofile || echo "Homebrew already in path"
+      description: Adding Homebrew to Zsh profile
+
 - brewfile:
     - src/osx/macos/Brewfile

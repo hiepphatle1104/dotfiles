@@ -2,5 +2,13 @@
     link:
       relink: true
       force: true
+    shell:
+      quiet: true
+      stdout: true
+      stderr: true
 
-- clean: ["~"]
+- clean:
+    ~/: 
+      force: true
+    ~/.config:
+      force: true

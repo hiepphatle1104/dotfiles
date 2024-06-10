@@ -1,0 +1,5 @@
+- link:
+    ~/.config/nvim: src/nvim
+    ~/.config/starship.toml: src/shell/themes/starship.toml
+- shell:
+    - command: bash src/scripts/ssh-setup.sh
