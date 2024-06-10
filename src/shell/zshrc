@@ -1,10 +1,43 @@
 export ZSH=$HOME/.oh-my-zsh
+export DOTFILES=$HOME/.dotfiles
+export DOTFILES_SRC=$DOTFILES/src
 
+# Plugins
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Starship
 eval "$(starship init zsh)"
 
-# source catppuccin_mocha-zsh-syntax-highlighting.zsh
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# Fuzzy Finder
+source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
+export FZF_DEFAULT_OPTS='--height 55% --layout reverse --border'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+# Fuzzy Finder Git
+source $DOTFILES_SRC/fzf/fzf-git.sh/fzf-git.sh
+
+# Aliases
+source $DOTFILES_SRC/shell/aliases.zsh
+
+# History
+source $DOTFILES_SRC/shell/history.zsh
+
+# Bindkeys
+source $DOTFILES_SRC/shell/bindkey.zsh
+
+# Themes
+source $DOTFILES_SRC/shell/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+# Zsh Autosuggestions
+source "$(brew --prefix)"/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Zsh Syntax Highlighting
+source "$(brew --prefix)"/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
