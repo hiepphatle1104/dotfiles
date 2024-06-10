@@ -1,7 +1,10 @@
-- shell:
-    - command: bash src/scripts/ssh-setup.sh
-      description: Setting up SSH
-
 - link:
     ~/.config/nvim: src/nvim
     ~/.config/starship.toml: src/shell/themes/starship.toml
+    ~/.config/bat/themes/Catppuccin_Mocha.tmTheme: src/shell/themes/Catppuccin_Mocha.tmTheme
+
+- shell:
+    - command: bash src/scripts/ssh-setup.sh
+      description: Setting up SSH
+    - command: bat cache --build
+      description: Building bat cache
