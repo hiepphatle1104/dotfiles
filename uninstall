@@ -1,0 +1,13 @@
+# /bin/bash
+
+# Install dotfiles
+uninstall() {
+  stow -D .
+}
+
+main(){
+  echo "Uninstalling dotfiles..."
+  uninstall 
+  echo "Done."
+}
+main
