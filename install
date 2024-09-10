@@ -8,6 +8,7 @@ install() {
 main(){
   echo "Installing dotfiles..."
   install 
-  echo "Done."
+  echo "Done." 
+  
 }
 main
