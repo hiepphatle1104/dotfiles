@@ -1,0 +1,5 @@
+export ZSH="$HOME/.oh-my-zsh"
+export BAT_THEME="Catppuccin Mocha" 
+export dotfiles="$HOME/dotfiles" 
+export dotfiles_config="$dotfiles/.config"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"

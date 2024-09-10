@@ -1,0 +1,38 @@
+/* 
+#
+# CSS to customize the look of Visual Studio Code
+#
+*/
+
+.title-actions .monaco-dropdown {
+	display: none !important;
+}
+
+.editor .action-label:not(.codicon-close-dirty) {
+	display: none !important;
+}
+
+.filematch .monaco-icon-label:before,
+.custom-list-row .result {
+	background-position: 0 bottom !important;
+}
+
+.filematch .monaco-count-badge {
+	padding: 5px 6px 0 6px !important;
+}
+
+.sidebar .title-label {
+	padding: 0 !important;
+}
+
+.quick-input-list-row div {
+	display: flex !important;
+	align-items: center !important;
+}
+
+.monaco-text-button {
+	border: none !important;
+	border-radius: 5px !important;
+	padding: 8px 0 !important;
+	font-size: 14px !important;
+}

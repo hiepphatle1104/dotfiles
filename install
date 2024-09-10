@@ -1,0 +1,13 @@
+# /bin/bash
+
+# Install dotfiles
+install() {
+  stow .
+}
+
+main(){
+  echo "Installing dotfiles..."
+  install 
+  echo "Done."
+}
+main

@@ -1,0 +1,57 @@
+#
+# GENERAL
+#
+import = [
+   "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+#
+# ENVIRONMENT
+#
+[env]
+TERM = "xterm-256color"
+live_config_reload = "true"
+
+#
+# WINDOW
+#
+[window]
+# Window dimensions
+dimensions = { columns = 100, lines = 30 }
+padding = { x = 25, y = 25 }
+position = { x = 500, y = 250 }
+
+# Window title
+decorations =  "Transparent" 
+# decorations =  Buttonless 
+opacity = 0.7
+blur = true
+
+# Options
+option_as_alt =  "Both" 
+
+#
+# FONT
+#
+[font]
+normal.family = "FiraCode Nerd Font Mono"
+size = 16
+
+#
+# CURSOR
+#
+[cursor]
+style = { shape = "Block", blinking = "On"}
+blink_interval = 575
+
+#
+# KEYBINDINGS
+#
+[keyboard]
+bindings = [
+   { key =  "Left" ,  mods =  "Option" ,  chars = "\u001bB"    },
+   { key =  "Right" , mods =  "Option" ,  chars =  "\u001bF"    },
+   { key =  "Left" ,  mods =  "Command" , chars =  "\u001bOH"   },
+   { key =  "Right" , mods =  "Command" , chars =   "\u001bOF"  },
+   { key =  "Back" ,  mods =  "Command" , chars =  "\u0015"     }
+]
