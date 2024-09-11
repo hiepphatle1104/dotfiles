@@ -31,12 +31,12 @@
 	padding: 5px 10px !important;
 }
 
-.action-item[role="tab"] .action-label {
+.panel.bottom .composite-bar-container .action-label {
 	font-size: 12px !important;
 	color: #908caa !important;
 }
 
-.action-item[role="tab"] .active-item-indicator {
+.panel.bottom .composite-bar-container .active-item-indicator {
 	display: none !important;
 }
 
