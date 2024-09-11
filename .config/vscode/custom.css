@@ -4,35 +4,104 @@
 #
 */
 
-.title-actions .monaco-dropdown {
+.sidebar .monaco-list::before {
+	outline: none !important;
+}
+
+.xterm-decoration-overview-ruler {
+	visibility: hidden !important;
+}
+
+.monaco-dropdown, 
+.editor .tabs .editor-actions {
 	display: none !important;
 }
 
-.editor .action-label:not(.codicon-close-dirty) {
+.panel.pane-composite-part .title {
+	background-color: #191724 !important;
+}
+
+.panel.bottom {
+	border-top: 1px solid rgb(71, 71, 71) !important;
+}
+
+.action-item.switch-terminal .monaco-select-box {
+	border: 1.5px solid rgba(110, 106, 134, 0.2) !important;
+	box-sizing: border-box !important;
+	padding: 5px 10px !important;
+}
+
+.action-item[role="tab"] .action-label {
+	font-size: 12px !important;
+	color: #908caa !important;
+}
+
+.action-item[role="tab"] .active-item-indicator {
 	display: none !important;
 }
 
-.filematch .monaco-icon-label:before,
-.custom-list-row .result {
-	background-position: 0 bottom !important;
-}
-
-.filematch .monaco-count-badge {
-	padding: 5px 6px 0 6px !important;
-}
-
-.sidebar .title-label {
-	padding: 0 !important;
-}
-
-.quick-input-list-row div {
-	display: flex !important;
-	align-items: center !important;
-}
-
-.monaco-text-button {
-	border: none !important;
+.pane .welcome-view-content .monaco-button{
+	background-color: #191724 !important;
+	color: #cdcae0 !important;
+	box-sizing: border-box !important;
+	border: 1px solid #b58d8b !important;
 	border-radius: 5px !important;
-	padding: 8px 0 !important;
+	padding: 7px 0 !important;
+}
+
+.pane-body{
+	background-color: #191724 !important;
+}
+
+.quick-input-list-row div { 
+	display: flex !important; 
+	align-items: center !important
+}
+
+.monaco-list-row .monaco-action-bar {
+	margin: auto !important;
+}
+
+.quick-input-header {
+	display: block !important;
+}
+
+.quick-input-widget {
+	/* display: block !important; */
+	transform: translateY(-50%) !important;
+	top: 50% !important;
+	box-shadow: 0px 8px 20px rgba(100, 100, 111, .25) !important;
+	padding: 10px 10px 18px 10px !important;
+	backdrop-filter: blur(3px) !important;
+	border-radius: 10px !important;
+}
+
+.monaco-list-rows {
+	background: transparent !important;
+}
+
+.monaco-list-row:hover {
+	background: rgba(0, 0, 0, .2) !important;
+}
+
+.notifications-toasts .monaco-list-row:hover {
+	background: none !important;
+}
+
+.quick-input-filter .monaco-inputbox {
+	border-radius: 10px !important;
+	padding: 10px !important;
+	border: none !important;
+	background-color: rgba(50, 50, 50, .40) !important;
+	font-size: 14px !important;
+	margin-bottom: 16px !important;
+}
+
+.monaco-inputbox input::placeholder {
+	color: rgba(255, 255, 255, .3) !important;
+}
+
+.titlebar .window-title {
 	font-size: 14px !important;
 }
+
