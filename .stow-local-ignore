@@ -33,5 +33,4 @@ CVS
 
 /.config/zsh
 
-install
-uninstall
+setup

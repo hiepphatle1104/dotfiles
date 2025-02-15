@@ -1,0 +1,28 @@
+# /bin/bash
+
+# Install dotfiles
+install() {
+  stow .
+}
+
+# Uninstall dotfiles
+uninstall() {
+  stow -D .
+}
+
+main(){
+  if [ "$1" == "install" ]; then
+    echo "Installing dotfiles..."
+    install
+    echo "Done."
+  elif [ "$1" == "uninstall" ]; then
+    echo "Uninstalling dotfiles..."
+    uninstall
+    echo "Done."
+  else
+    echo "Usage: $0 {install|uninstall}"
+    exit 1
+  fi
+}
+
+main "$@"
