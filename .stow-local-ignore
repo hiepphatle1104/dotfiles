@@ -34,3 +34,6 @@ CVS
 /.config/zsh
 
 setup
+LICENSE
+README.md
+.config/.vscode
