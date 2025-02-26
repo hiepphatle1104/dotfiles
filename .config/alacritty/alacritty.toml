@@ -1,9 +1,3 @@
-#
-# GENERAL
-#
-import = [
-   "~/.config/alacritty/catppuccin-mocha.toml"
-]
 
 #
 # ENVIRONMENT
@@ -54,4 +48,12 @@ bindings = [
    { key =  "Left" ,  mods =  "Command" , chars =  "\u001bOH"   },
    { key =  "Right" , mods =  "Command" , chars =   "\u001bOF"  },
    { key =  "Back" ,  mods =  "Command" , chars =  "\u0015"     }
+]
+
+[general]
+#
+# GENERAL
+#
+import = [
+   "~/.config/alacritty/catppuccin-mocha.toml"
 ]
