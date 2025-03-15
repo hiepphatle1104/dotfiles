@@ -4,5 +4,7 @@ export DOTFILES="$HOME/dotfiles"
 export DOTFILES_CONFIG="$DOTFILES/.config"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 . "$HOME/.cargo/env"
+
+export LG_CONFIG_FOLDER="$DOTFILES_CONFIG/lazygit"
+export LG_CONFIG_FILE="$LG_CONFIG_FOLDER/config.yml"

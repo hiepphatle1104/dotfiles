@@ -17,4 +17,3 @@ alias py="python3"
 alias vim="nvim"
 alias ipconfig="ifconfig | grep \"inet \" | grep -v 127.0.0.1 | awk '{print \"Broadcast:\", \$NF, \"- IP:\", \$2}'"
 alias showports="sudo netstat -anp tcp | grep LISTEN | awk '{print \"Protocol:\", \$1, \"| IP:\", \$4, \"| Port:\", \$5}'"
-
