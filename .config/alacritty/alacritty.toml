@@ -18,7 +18,7 @@ position = { x = 500, y = 250 }
 # Window title
 decorations =  "Transparent" 
 # decorations =  Buttonless 
-opacity = 0.7
+opacity = 0.3
 blur = true
 
 # Options
