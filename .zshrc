@@ -1,5 +1,5 @@
 
-ZSH_THEME="" 
+ZSH_THEME=""
 
 plugins=(git)
 
@@ -11,7 +11,3 @@ timezsh() {
 
 # Initialize ZSH
 source "$DOTFILES/.config/zsh/config.zsh"
-
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/hphats/.lmstudio/bin"
