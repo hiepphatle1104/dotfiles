@@ -10,6 +10,10 @@ uninstall() {
   stow -D .
 }
 
+backup() {
+  rsync -av --exclude='backup/' ~/dotfiles ~/dotfiles/backup
+}
+
 main(){
   if [ "$1" == "install" ]; then
     echo "Installing dotfiles..."
@@ -19,8 +23,12 @@ main(){
     echo "Uninstalling dotfiles..."
     uninstall
     echo "Done."
+  elif [ "$1" == "backup" ]; then
+    echo "Starting backup"
+    backup
+    echo "Done"
   else
-    echo "Usage: $0 {install|uninstall}"
+    echo "Usage: $0 {install|uninstall|backup}"
     exit 1
   fi
 }
