@@ -1,1 +1,3 @@
-**This is my nvim setup**
+# nvim-setup
+
+> A collection of my personal Neovim configurations and plugins.
