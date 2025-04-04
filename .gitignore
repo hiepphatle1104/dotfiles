@@ -1,4 +1,4 @@
 # Ignore Mac system files
 .DS_store
 backup/
-.config/nvim
+.config/nvim/
