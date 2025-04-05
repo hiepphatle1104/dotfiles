@@ -18,6 +18,10 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
+# go
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
 # others
 export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/Users/hphats/.local/bin:$PATH"
