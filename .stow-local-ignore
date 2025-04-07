@@ -36,4 +36,5 @@ CVS
 setup
 LICENSE
 README.md
-.config/.vscode
+.config/vscode
+.config/alacritty
