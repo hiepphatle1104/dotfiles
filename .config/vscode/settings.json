@@ -1,13 +1,9 @@
 {
-  // Workbench
-  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "symbols",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.tree.renderIndentGuides": "none",
   "workbench.startupEditor": "none",
-  "workbench.editor.showTabs": "single",
 
-  // Editor
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.smoothScrolling": true,
@@ -26,29 +22,27 @@
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
 
-  // Terminal
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono','MesloLGM Nerd Font'",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.hideOnStartup": "always",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.suggest.enabled": true,
-
-  // Others
-  "breadcrumbs.enabled": false,
   "symbols.hidesExplorerArrows": true,
   "files.autoSave": "onFocusChange",
 
-  // Extenstions
   "code-runner.runInTerminal": true,
   "extensions.ignoreRecommendations": true,
   "eslint.run": "onType",
+  "code-runner.clearPreviousOutput": true,
 
-  // Vim
   "vim.useSystemClipboard": true,
   "vim.leader": " ",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -73,10 +67,6 @@
       "after": ["\"", "_", "C"]
     },
     {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
       "before": ["<leader>", "f", "m"],
       "commands": ["editor.action.formatDocument"]
     }
@@ -98,5 +88,33 @@
       "before": ["<C-l>"],
       "after": ["<Right>"]
     }
-  ]
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Min Dark",
+  "window.zoomLevel": 0.3,
+
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.formatOnSave": true,
+  "workbench.editor.empty.hint": "hidden",
+
+  "go.formatTool": "gofmt",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "golang.go"
+  },
+  "debug.console.fontFamily": "'FiraCode Nerd Font Mono'",
+  "debug.console.fontSize": 13,
+  "git.openRepositoryInParentFolders": "never",
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  }
 }

@@ -25,5 +25,16 @@ export PATH="$GOPATH/bin:$PATH"
 # others
 export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/Users/hphats/.local/bin:$PATH"
+export PATH="/usr/local/bin/sephera:$PATH"
 . "$HOME/.cargo/env"
+
+# node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ngrok
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+  fi
 

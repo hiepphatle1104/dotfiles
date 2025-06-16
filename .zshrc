@@ -11,3 +11,4 @@ timezsh() {
 
 # Initialize ZSH
 source "$DOTFILES/.config/zsh/config.zsh"
+
