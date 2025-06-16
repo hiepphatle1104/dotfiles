@@ -26,7 +26,7 @@ alias lzg="lazygit"
 
 # Python
 alias py="python3"
-alias pyactive="source ./venv/bin/active"
+alias pyactive="source ./.venv/bin/active"
 
 # Network
 alias ipconfig="ifconfig | grep \"inet \" | grep -v 127.0.0.1 | awk '{print \"Broadcast:\", \$NF, \"- IP:\", \$2}'"
