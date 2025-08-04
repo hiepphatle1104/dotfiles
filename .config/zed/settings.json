@@ -1,0 +1,109 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // Keymap
+  "icon_theme": "Zed (Default)",
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "model_parameters": [],
+    "always_allow_tool_actions": false
+  },
+  "base_keymap": "VSCode",
+  // Theme
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Espresso (Blur)"
+  },
+  // Font
+  "ui_font_family": "Fira Code",
+  "terminal": {
+    "font_family": "FiraCode Nerd Font Mono",
+    "font_size": 14
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  // Project
+  "project_panel": {
+    "auto_fold_dirs": false
+  },
+  // Vim
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always"
+  },
+  // Config
+  "restore_on_startup": "last_workspace",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "format_on_save": "on",
+  "languages": {
+    "Go": {
+      "format_on_save": "language_server",
+      "formatter": {
+        "code_actions": {
+          "source.organizeImports": true
+        }
+      }
+    },
+    "JavaScript": {
+      "format_on_save": "prettier",
+      "formatter": {
+        "code_actions": {
+          "source.organizeImports": true,
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": "prettier",
+      "formatter": {
+        "code_actions": {
+          "source.organizeImports": true,
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "TSX": {
+      "format_on_save": "prettier",
+      "formatter": {
+        "code_actions": {
+          "source.organizeImports": true,
+          "source.fixAll.eslint": true
+        }
+      }
+    }
+  },
+  "close_on_file_delete": true,
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": false
+  },
+  "cursor_blink": false,
+  "scrollbar": {
+    "show": "never"
+  },
+  // LSP config
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "completeFunctionCalls": false
+      }
+    }
+  }
+}
