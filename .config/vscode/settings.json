@@ -114,7 +114,14 @@
   "debug.console.fontFamily": "'FiraCode Nerd Font Mono'",
   "debug.console.fontSize": 13,
   "git.openRepositoryInParentFolders": "never",
-  "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
-  }
+  "go.toolsManagement.autoUpdate": true,
+  "python.createEnvironment.trigger": "off",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.indentSize": "tabSize"
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
 }
