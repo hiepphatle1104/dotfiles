@@ -1,0 +1,11 @@
+# Configuration
+theme = catppuccin-mocha.conf
+font-family = "FiraCode Nerd Font Mono"
+font-size = 15
+background-opacity = 0.70
+background-blur-radius = 70
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = hidden
+title = ""
+cursor-opacity = 0.65
+adjust-cursor-thickness = 2
