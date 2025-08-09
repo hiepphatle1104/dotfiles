@@ -22,3 +22,7 @@ map("n", "<leader><leader>", "<C-^>", { desc = "Switch to prev buffer" }, opts)
 
 -- Plugins Keymap
 map("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Open Explorer" })
+
+map("n", "<leader>fm", function()
+  require("conform").format({ async = true, lsp_fallback = true })
+end, { desc = "Format code" })

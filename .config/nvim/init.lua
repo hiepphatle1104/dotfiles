@@ -6,4 +6,3 @@ require("config.autocmd")
 
 require("config.globals")
 require("config.colorscheme")
-

@@ -11,7 +11,25 @@ return {
     tag = 'v1.32.0',
     pin = true,
     lazy = true,
-    config = false,
+    opts = {}
+  },
+
+  -- Mason Tool Installer
+  {
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    lazy = false,
+    config = function()
+      local tool = require('mason-tool-installer')
+      tool.setup({
+        ensure_installed = {
+          "black",
+          "goimports",
+          "prettier",
+          "prettierd",
+          "isort"
+        }
+      })
+    end
   },
 
   -- Autocompletion
@@ -23,7 +41,7 @@ return {
 
       cmp.setup({
         sources = {
-          {name = 'nvim_lsp'},
+          { name = 'nvim_lsp' },
         },
         mapping = cmp.mapping.preset.insert({
           ['<C-Space>'] = cmp.mapping.complete(),
@@ -44,12 +62,12 @@ return {
     'neovim/nvim-lspconfig',
     tag = 'v1.8.0',
     pin = true,
-    cmd = {'LspInfo', 'LspInstall', 'LspStart'},
-    event = {'BufReadPre', 'BufNewFile'},
+    cmd = { 'LspInfo', 'LspInstall', 'LspStart' },
+    event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'mason-org/mason.nvim'},
-      {'mason-org/mason-lspconfig.nvim'},
+      { 'hrsh7th/cmp-nvim-lsp' },
+      { 'mason-org/mason.nvim' },
+      { 'mason-org/mason-lspconfig.nvim' },
     },
     init = function()
       -- Reserve a space in the gutter
@@ -72,7 +90,7 @@ return {
       vim.api.nvim_create_autocmd('LspAttach', {
         desc = 'LSP actions',
         callback = function(event)
-          local opts = {buffer = event.buf}
+          local opts = { buffer = event.buf }
 
           vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
           vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
@@ -82,13 +100,13 @@ return {
           vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
           vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
           vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-          vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
+          vim.keymap.set({ 'n', 'x' }, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
           vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
         end,
       })
 
       require('mason-lspconfig').setup({
-        ensure_installed = {"lua_ls", "gopls", "pyright", "ts_ls"},
+        ensure_installed = { "lua_ls", "gopls", "pyright", "ts_ls" },
         handlers = {
           -- this first function is the "default handler"
           -- it applies to every language server without a "custom handler"
