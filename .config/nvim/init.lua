@@ -1,8 +1,9 @@
 require("config.lazy")
 
 require("config.keymap")
-require("config.option")
+require("config.options")
+require("config.autocmd")
 
-require("config.init")
-require("config.theme")
+require("config.globals")
+require("config.colorscheme")
 
