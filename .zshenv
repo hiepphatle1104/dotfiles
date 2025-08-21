@@ -11,3 +11,8 @@ export HOMEBREW_NO_ENV_HINTS=1
 
 # Bat
 export BAT_THEME="Catppuccin Mocha"
+
+
+# Java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
