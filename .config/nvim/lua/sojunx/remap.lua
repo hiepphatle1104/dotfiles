@@ -16,4 +16,3 @@
 -- }
  
 -- which_key.register(non_lsp_mappings)
-
