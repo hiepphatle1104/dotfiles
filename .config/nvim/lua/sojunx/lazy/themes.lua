@@ -4,11 +4,16 @@ return {
   priority = 1000,
   config = function() 
     require("catppuccin").setup({
+      flavour = "mocha",
       transparent_background = true,
-      show_end_of_buffer = true,
-      integrations = {
-        fidget = true,
-      },
+      custom_highlights = function()
+        return {
+          -- NeoTreeMessage = { fg = "#5b6078" },
+          -- GitSignsCurrentLineBlame = { fg = "#585b70" },
+          -- BlinkCmpDoc = { bg = "#1e1e2e" },
+          -- BlinkCmpDocBorder = { bg = "#1e1e2e" },
+        }
+      end,
     })
   end
 }
