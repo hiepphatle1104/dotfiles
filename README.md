@@ -1,4 +1,4 @@
-# Hmmm... 🤔
+## Hmmm... 🤔
 
 Im just creating my personal workflow using nvim and some addtional tools.
 
