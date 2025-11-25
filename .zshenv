@@ -15,3 +15,6 @@ export HOMEBREW_NO_ENV_HINTS=1
 # Plugins
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
 export BAT_THEME="Catppuccin Mocha"
+
+# Nvim
+export MYNVIMRC="$HOME/.config/nvim/init.lua"
