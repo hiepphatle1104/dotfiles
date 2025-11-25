@@ -8,12 +8,9 @@ return {
       transparent_background = true,
       custom_highlights = function()
         return {
-          -- NeoTreeMessage = { fg = "#5b6078" },
-          -- GitSignsCurrentLineBlame = { fg = "#585b70" },
-          -- BlinkCmpDoc = { bg = "#1e1e2e" },
-          -- BlinkCmpDocBorder = { bg = "#1e1e2e" },
-        }
-      end,
+                    GitSignsCurrentLineBlame = { fg = "#8b8d9f" }
+                }
+      end
     })
   end
 }
