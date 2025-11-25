@@ -1,0 +1,11 @@
+[init]
+	defaultBranch = main
+[user]
+	email = phatlee1104@gmail.com
+	name = sojunx
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[credential]
+	helper = osxkeychain
