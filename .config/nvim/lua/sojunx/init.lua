@@ -1,5 +1,5 @@
 vim.g.mapleader = " " -- Set leader key
 
-require("sojunx.lazy_init")
+require("sojunx.lazy")
 require("sojunx.set")
 require("sojunx.remap")
