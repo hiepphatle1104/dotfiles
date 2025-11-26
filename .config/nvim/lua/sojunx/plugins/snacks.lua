@@ -10,7 +10,13 @@ return {
       dashboard = { enabled = true },
       indent = { enabled = true },
       input = { enabled = true },
-      picker = { enabled = true },
+      picker = {
+        exclude = {
+          "node_modules",
+          ".git",
+          "*.lock",
+        },
+      },
       quickfile = { enabled = true },
       scope = { enabled = true },
       lazygit = {},
