@@ -1,7 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
-    dependencies = { { "nvim-mini/mini.icons", opts = { style = "glyphs" } } },
-    config = function()
+	dependencies = { { "nvim-mini/mini.icons", opts = { style = "glyphs" } } },
+	config = function()
 		require("lualine").setup({
 			options = {
 				component_separators = { left = "", right = "" },
