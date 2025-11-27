@@ -11,6 +11,24 @@ return {
       indent = { enabled = true },
       input = { enabled = true },
       picker = {
+        formatters = {
+          file = { filename_first = true },
+        },
+        matcher = { frecency = true },
+        sources = {
+          files = {
+            hidden = true,
+            layout = { preset = "default" },
+          },
+
+          lines = {
+            layout = { preset = "select" },
+          },
+
+          git_branches = {
+            layout = { preset = "vscode" },
+          },
+        },
         exclude = {
           "node_modules",
           ".git",
