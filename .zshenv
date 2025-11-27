@@ -1,5 +1,6 @@
 # Home
 export DOTFILE_DIR=$HOME/dotfiles
+export XDG_CONFIG_HOME=$HOME/.config
 
 # Zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
