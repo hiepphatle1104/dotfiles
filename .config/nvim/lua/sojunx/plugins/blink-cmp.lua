@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
   dependencies = {
     "rafamadriz/friendly-snippets",
-    "nvim-web-devicons",
+    "nvim-tree/nvim-web-devicons",
     "onsails/lspkind.nvim",
     {
       "saghen/blink.compat",
